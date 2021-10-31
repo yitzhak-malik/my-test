@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LessonFragment"
+    android:layoutDirection="ltr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/square_purple"
+        android:layoutDirection="ltr">
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+
+        <TextView
+            android:id="@+id/title"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="15dp"
+            android:text="khdsgfh djhfglkjhdf lsdfgjljdf ljljs, ndljdfg lkjsfdgjkljdsfgj"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="153dp"
+        android:layout_height="93dp"
+        android:layout_margin="24dp"
+        android:background="@drawable/square"
+        android:padding="1dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="lkmsalkfjlkfd;lkjg lkjdgfljd lkjdgflj ;lkjdfglkj ;lkjfdglkj ;lkjgfn"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Description"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/subtitle" />
+
+    <TextView
+        android:id="@+id/decription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:scrollbars="vertical"
+        android:text="kfdlkj kljfdglkj dflgjl kjdf;lgkj sd;l fkjgs; kfdlkj kljfdglkj dflgjl kjdf;lgkj sd;l fkjgs; kfdlkj kljfdglkj dflgjl kjdf;lgkj sd;l fkjgs; kfdlkj kljfdglkj dflgjl kjdf;lgkj sd;l fkjgs; kfdlkj kljfdglkj dflgjl kjdf;lgkj sd;l fkjgs; kfdlkj kljfdglkj dflgjl kjdf;lgkj sd;l fkjgs; kfdlkj kljfdglkj dflgjl kjdf;lgkj sd;l fkjgs; kfdlkj kljfdglkj dflgjl kjdf;lgkj sd;l fkjgs; kfdlkj kljfdglkj dflgjl kjdf;lgkj sd;l fkjgs; kfdlkj kljfdglkj dflgjl kjdf;lgkj sd;l fkjgs; kfdlkj kljfdglkj dflgjl kjdf;lgkj sd;l fkjgs; kfdlkj kljfdglkj dflgjl kjdf;lgkj sd;l fkjgs; kfdlkj kljfdglkj dflgjl kjdf;lgkj sd;l fkjgs; kfdlkj kljfdglkj dflgjl kjdf;lgkj sd;l fkjgs;"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.110000014" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</LinearLayout>
